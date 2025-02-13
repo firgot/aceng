@@ -1,0 +1,122 @@
+/* CSS untuk Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Warna latar belakang default */
+    background-image: url('ozi.jpg'); /* Menambahkan gambar latar belakang */
+    background-size: cover; /* Agar gambar menutupi seluruh layar */
+    background-position: center center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Agar gambar tidak terulang */
+}
+
+/* CSS untuk Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* CSS untuk Header */
+header {
+    background: #08509e; /* Warna biru terang untuk header */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+}
+
+/* CSS untuk Gambar di Kiri Atas (Dua Gambar Bersebelahan) */
+.left-image-container {
+    position: absolute; /* Posisi absolut agar bisa diposisikan di tempat tertentu */
+    top: 10px; /* Memberikan jarak 20px dari bagian atas */
+    left: 10px; /* Memberikan jarak 20px dari bagian kiri */
+    display: flex; /* Menggunakan flex untuk menata gambar secara horizontal */
+    gap: 10px; /* Menambahkan jarak antara gambar */
+}
+
+/* Membuat gambar menjadi bulat */
+.uploaded-image {
+    width: 100px; /* Ukuran gambar */
+    height: 100px; /* Menjaga gambar tetap berbentuk persegi */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover; /* Memastikan gambar menutupi area tanpa terdistorsi */
+}
+
+/* CSS untuk Gambar di Tengah */
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.uploaded-image-center {
+    width: 100%;
+    max-width: 200px; /* Membatasi lebar gambar */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* CSS untuk Item Berita */
+.news-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.news-item a {
+    text-decoration: none;
+    color: #000000; /* Warna teks untuk tautan */
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7); /* Latar belakang putih transparan */
+    padding: 5px 10px; /* Memberikan ruang di sekitar teks */
+    border-radius: 5px; /* Membuat sudut membulat pada latar belakang */
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+.news-item p {
+    color: #c1e206; /* Warna teks untuk paragraf */
+    background-color: rgb(30, 3, 163); /* Latar belakang hitam transparan */
+    padding: 5px 10px; /* Memberikan ruang di sekitar teks */
+    border-radius: 5px;
+}
+
+/* Responsivitas pada perangkat kecil (Mobile) */
+@media (max-width: 600px) {
+    header {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .news-item a {
+        font-size: 18px;
+    }
+
+    .news-item p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
